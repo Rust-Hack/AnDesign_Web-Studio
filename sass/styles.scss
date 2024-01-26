@@ -1,2 +1,11 @@
 @import "./_header";
 @import "./_main";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 2000px;
+}
