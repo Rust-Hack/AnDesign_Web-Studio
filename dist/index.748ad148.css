@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap";
 .phone-order, .nav, .logo-under {
   color: #fff;
   text-transform: uppercase;
@@ -66,8 +66,237 @@ nav {
   color: red;
 }
 
-span {
+.line {
+  display: none;
+}
+
+.li-for-mobile {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Tenor Sans, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.li-for-mobile:hover {
+  color: red;
+  -webkit-text-decoration: underline dashed;
+  text-decoration: underline dashed;
+}
+
+@media screen and (width <= 1180px) {
+  nav, .visible {
+    display: none;
+  }
+
+  header {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+
+  .line {
+    background-image: url("three-lines.69f921e2.svg");
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 30px;
+    display: block;
+  }
+
+  .links {
+    background: #010101f2;
+    width: 100%;
+    height: 353px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .cross {
+    display: none;
+  }
+
+  .line:hover .links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+    display: flex;
+  }
+
+  .line:hover .cross {
+    display: block;
+    position: absolute;
+    top: 27px;
+    right: 19.5px;
+  }
+}
+
+.greetings {
+  background-color: #010101;
+  background-image: url("Mask Group.dee8ec7a.svg");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 1173px 825px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 65px;
+  height: 835px;
+  padding-left: 185px;
+  display: flex;
+}
+
+.greetings div {
+  width: 100%;
+  max-width: 625px;
+}
+
+.greetings-title {
+  color: #fff;
   font-family: Montserrat, sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88.6%;
+}
+
+.greetings-text {
+  color: #fff;
+  width: 100%;
+  max-width: 607px;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.greetings-btn {
+  color: #fff;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  background-color: red;
+  border: none;
+  padding: 19px 53px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (width <= 1180px) {
+  .greetings {
+    background-size: 725px 600px;
+    height: 755px;
+  }
+}
+
+@media screen and (width <= 779px) {
+  .about-site-block-visible {
+    display: none;
+  }
+}
+
+.about-site {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 705px;
+  display: flex;
+}
+
+.about-site-blocks {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  padding-top: 51px;
+  padding-bottom: 51px;
+  display: flex;
+}
+
+.about-site-block {
+  background-color: #fff8f8;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 43px;
+  width: 379px;
+  height: 509px;
+  display: flex;
+}
+
+.about-site-block h1 {
+  color: #000;
+  width: 287px;
+  font-family: Montserrat, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88.6%;
+}
+
+.about-site-block p {
+  color: #3a3a3a;
+  width: 287px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 190%;
+}
+
+.about-site-block .about-site-block-info {
+  color: #050505;
+  letter-spacing: .75px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #1d1c1c;
+  justify-content: center;
+  align-items: center;
+  width: 287px;
+  height: 56px;
+  font-family: Tenor Sans, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  transition: background-color 1s;
+  display: flex;
+}
+
+.about-site-block .about-site-block-info:hover {
+  background-color: #ff9595b1;
+}
+
+.about-site-block-visible {
+  display: none;
+}
+
+@media screen and (width <= 1180px) {
+  .about-site-block-visible {
+    background-color: #fff8f8;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+    width: 379px;
+    height: 509px;
+    display: flex;
+  }
+}
+
+@media screen and (width <= 779px) {
+  .about-site-block-visible {
+    display: none;
+  }
 }
 
 * {

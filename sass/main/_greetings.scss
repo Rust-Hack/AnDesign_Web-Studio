@@ -1,0 +1,66 @@
+@import "../fonts";
+
+.greetings {
+    height: 835px;
+    background-color: #010101;
+    background-image: url(../images/Mask\ Group.svg) ;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 1173px 825px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 65px;
+    padding-left: 185px;
+
+}
+
+.greetings div {
+    max-width: 625px;
+    width: 100%;
+}
+
+@mixin greetings-text ($font-size, $font-weight, $line-height){
+    color: #FFF;
+    font-family: $Montserrat;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: $font-weight;
+    line-height: $line-height; /* 53.16px */
+}
+
+.greetings-title {
+    @include greetings-text(60px, 700, 88.6%);
+}
+
+.greetings-text {
+    @include greetings-text(18px, 400, 160%);
+    max-width: 607px;
+    width: 100%;
+}
+
+.greetings-btn {
+    padding: 19px 53px;
+    background-color: #F00;
+    border: none;
+
+    @include greetings-text(16px, 500, normal);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1180px) {
+    .greetings {
+        background-size: 725px 600px;
+        height: 755px;
+
+    }
+}
+
+@media screen and (max-width: 779px) {
+    .about-site-block-visible {
+        display: none;
+    }    
+}

@@ -1,0 +1,101 @@
+@import "../fonts";
+
+.about-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 705px;
+    height: 100%;
+}
+
+.about-site-blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding-top: 51px;
+    padding-bottom: 51px;
+}
+
+@mixin text-block ($color-text, $font-size, $font-weight, $line-height) {
+    color: $color-text;
+    font-family: $Montserrat;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+.about-site-block {
+    width: 379px;
+    height: 509px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF8F8;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+
+    h1 {
+        @include text-block(#000, 50px, 700, 88.6%);
+        width: 287px;
+    }
+
+    p {
+        @include text-block(#3A3A3A, 16px, 400,  190%);
+        width: 287px;
+    }
+
+    .about-site-block-info {
+        color: #050505;
+        font-family: $tenor-sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        border: 1px solid #1D1C1C;
+        text-align: center;
+        width: 287px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition:  1s background-color;
+    }
+
+    .about-site-block-info:hover {
+        background-color: #ff9595b1;
+    }
+
+}
+
+.about-site-block-visible {
+    display: none;
+}
+
+@media screen and (max-width: 1180px) {
+    .about-site-block-visible {
+        width: 379px;
+        height: 509px;
+        display: flex;
+        flex-direction: column;
+        background-color: #FFF8F8;
+        justify-content: center;
+        align-items: center;
+        gap: 43px;
+    }    
+}
+
+@media screen and (max-width: 779px) {
+    .about-site-block-visible {
+        display: none;
+    }    
+}
+
+
+

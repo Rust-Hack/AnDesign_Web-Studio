@@ -72,6 +72,82 @@ nav {
     color: #F00;
 }
 
-span {
-    font-family: $Montserrat;
+.line {
+    display: none;
 }
+
+.li-for-mobile {
+    color: #FFF;
+    font-family: $tenor-sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.li-for-mobile:hover {
+    color: #F00;
+    text-decoration: underline dashed;
+}
+
+@media screen and (max-width: 1180px) {
+
+    nav {
+        display: none;
+    } 
+
+    .visible {
+        display: none;
+    }
+
+    header {
+        justify-content: space-evenly;
+    }
+
+    .line {
+        width: 43px;
+        height: 30px;
+        display: block;
+        background-image: url(../images/three-lines.svg);
+        background-repeat: no-repeat;
+    }
+
+    .links {
+        display: none;
+        position: absolute;
+        background: rgba(1, 1, 1, 0.95);
+        width: 100%;
+        height: 353px;
+        left: 0;
+        top: 0;
+
+    }
+
+    .cross {
+        display: none;
+    }
+
+    .line:hover .links {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 37px;
+    }
+
+    .line:hover .cross {
+        display: block;
+        position: absolute;
+        top: 27px;
+        right: 19.5px;
+    }
+}
+
+// @media screen and (max-width: 779px) {
+//     .about-site-block-visible {
+//         display: none;
+//     }    
+// }
