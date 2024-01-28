@@ -1,5 +1,6 @@
 @import "../fonts";
 
+
 .about-site {
     display: flex;
     justify-content: center;
@@ -172,11 +173,7 @@
 
     .about-site-block-visible img {
         width: 100%;
-    }
-
-    // .about-site-block-visible {
-    //     display: none;
-    // }    
+    }  
 }
 
 @media screen and (max-width: 611px) {
