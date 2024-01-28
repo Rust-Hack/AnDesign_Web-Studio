@@ -136,6 +136,34 @@ nav {
   }
 }
 
+@media screen and (width <= 779px) {
+  header {
+    gap: 0;
+  }
+
+  .for-mobile {
+    width: 65.457px;
+    height: 16.364px;
+  }
+
+  .logo-under {
+    font-size: 10px;
+  }
+
+  .telefon-icon {
+    display: none;
+  }
+
+  .phone-number {
+    font-size: 18px;
+  }
+
+  .line {
+    width: 38px;
+    height: 30px;
+  }
+}
+
 .greetings {
   background-color: #010101;
   background-image: url("Mask Group.dee8ec7a.svg");
@@ -192,14 +220,44 @@ nav {
 
 @media screen and (width <= 1180px) {
   .greetings {
-    background-size: 725px 600px;
-    height: 755px;
+    background-size: 670px 483px;
+    height: 670px;
+    padding-left: 34px;
+  }
+
+  .greetings-title {
+    font-size: 50px;
+  }
+
+  .greetings-text {
+    font-size: 16px;
+  }
+
+  .greetings-btn {
+    padding: 15px 50px;
   }
 }
 
 @media screen and (width <= 779px) {
-  .about-site-block-visible {
-    display: none;
+  .greetings-title {
+    font-size: 40px;
+  }
+
+  .greetings-text {
+    font-size: 16px;
+  }
+
+  .greetings-btn {
+    padding: 15px 45px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (width <= 500px) {
+  .greetings {
+    background-size: 430px 400px;
+    height: 634px;
+    padding-left: 20px;
   }
 }
 
@@ -281,22 +339,122 @@ nav {
 }
 
 @media screen and (width <= 1180px) {
+  .about-site-block {
+    width: 339px;
+    height: 448px;
+  }
+
+  .about-site-block h1 {
+    color: #000;
+    width: 289px;
+    font-family: Montserrat, sans-serif;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88.6%;
+  }
+
+  .about-site-block p {
+    color: #3a3a3a;
+    width: 289px;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190%;
+  }
+
+  .about-site-block .about-site-block-info {
+    width: 289px;
+    height: 56px;
+  }
+
+  .about-site-block .about-site-block-info:hover {
+    background-color: #ff9595b1;
+  }
+}
+
+@media screen and (width <= 1060px) {
   .about-site-block-visible {
     background-color: #fff8f8;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 43px;
-    width: 379px;
-    height: 509px;
+    width: 339px;
+    height: 448px;
     display: flex;
+  }
+
+  .about-site-block-visible img {
+    width: 100%;
   }
 }
 
 @media screen and (width <= 779px) {
+  .about-site-block {
+    width: 295px;
+    height: 427px;
+  }
+
+  .about-site-block h1 {
+    color: #000;
+    width: 255px;
+    font-family: Montserrat, sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88.6%;
+  }
+
+  .about-site-block p {
+    color: #3a3a3a;
+    width: 255px;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190%;
+  }
+
+  .about-site-block .about-site-block-info {
+    width: 255px;
+    height: 56px;
+  }
+
+  .about-site-block .about-site-block-info:hover {
+    background-color: #ff9595b1;
+  }
+
+  .about-site-block-visible {
+    background-color: #fff8f8;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+    width: 295px;
+    height: 427px;
+    display: flex;
+  }
+
+  .about-site-block-visible img {
+    width: 100%;
+  }
+}
+
+@media screen and (width <= 611px) {
   .about-site-block-visible {
     display: none;
   }
+}
+
+.good-site-options {
+  background-color: #010101;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 1192px;
+  display: flex;
 }
 
 * {

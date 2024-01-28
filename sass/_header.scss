@@ -146,8 +146,32 @@ nav {
     }
 }
 
-// @media screen and (max-width: 779px) {
-//     .about-site-block-visible {
-//         display: none;
-//     }    
-// }
+@media screen and (max-width: 779px) {
+
+    header {
+        gap: 0px;
+    }
+
+    .for-mobile {
+        width: 65.457px;
+        height: 16.364px;
+    }
+
+    .logo-under {
+        font-size: 10px;
+    }
+
+    .telefon-icon {
+        display: none;
+    }
+
+
+    .phone-number {
+        font-size: 18px;
+    }
+
+    .line {
+        width: 38px;
+        height: 30px;
+    }
+}
