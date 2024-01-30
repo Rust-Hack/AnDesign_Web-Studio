@@ -1,0 +1,233 @@
+@import "../fonts";
+
+@mixin text-cost ($text-color, $font-size, $font-weight, $line-height) {
+    color: $text-color;
+    font-family: $Montserrat;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: $font-weight;
+    line-height: $line-height; /* 41.156px */
+}
+
+@mixin button-for-info ($font-size, $font-weight, $line-height){
+    color: #FFF;
+    font-family: $Montserrat;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: $font-weight;
+    line-height: $line-height; /* 53.16px */
+}
+
+.preliminary-cost-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.flex-for-photo {
+    display: flex;
+    justify-content: space-between;
+    // grid-column: 1/3;
+}
+
+.middle-photo-left {
+    position: relative;
+    top: 115px;
+    right: 441px;
+    z-index: -1;
+}
+
+.middle-photo-right {
+    position: relative;
+    top: 185px;
+    right: 253px;
+    z-index: -1;
+}
+
+.flex-for-info {
+    display: flex;
+}
+
+@mixin preliminary ($top-relative, $right-relative) {
+    width: 660px;
+    height: 400px;
+    position: relative;
+    top: $top-relative; //58px
+    right: $right-relative; //137px
+    background: #FFF8F8;
+    box-shadow: 0px 26px 76px 0px rgba(12, 22, 36, 0.16);
+    z-index: -1;
+}
+
+.preliminary-cost-block-for-info {
+    @include preliminary(58px, 137px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    z-index: 0;
+}
+
+.preliminary-cost-block-for-info div {
+    width: 546px;
+}
+
+.preliminary-cost-block-for-info-adaptiv div {
+    width: 546px;
+}
+
+.block-for-info-title {
+    @include text-cost(#000, 30px, 800, 137.187%);
+}
+
+.block-for-info-text {
+    @include text-cost(#3A3A3A, 16px, 400, 183.911%);
+}
+
+.block-for-info-button {
+    background-color: #F00;
+    width: 306px;
+    height: 58px;
+    border: none;
+    @include button-for-info(16px, 600, normal);
+    text-transform: uppercase;
+    transition:  1s background-color;
+}
+
+.block-for-info-button:hover {
+    background-color: rgb(252, 118, 118);
+}
+
+.block-for-info-button-adaptiv {
+    background-color: #F00;
+    width: 306px;
+    height: 58px;
+    border: none;
+    @include button-for-info(16px, 600, normal);
+    text-transform: uppercase;
+    transition:  1s background-color;
+}
+
+.block-for-info-button-adaptiv:hover {
+    background-color: rgb(252, 118, 118);
+}
+
+.big-photo {
+    position: relative;
+    // top: -103px;
+    right: 413px;
+    z-index: -2;
+}
+
+.small-photo {
+    position: relative;
+    justify-self: end;
+    top: -125px;
+    right: 367px;
+    z-index: -1;
+}
+
+.preliminary-cost-block-for-info-adaptiv {
+    display: none;
+    @include preliminary(-130px, 210px);
+}
+
+@media screen and (max-width: 1615px) {
+    .middle-photo-left {
+        width: 314px;
+        height: 210px;
+        right: 310px;
+    }
+
+    .middle-photo-right {
+        width: 230px;
+        height: 153px;
+        right: 210px;
+    }
+
+    .preliminary-cost-block-for-info {
+        right: 37px;
+    }
+
+    .big-photo {
+        width: 628.969px;
+        height: 424.07px;
+        right: 313px;
+    }
+
+    .small-photo {
+        width: 237.471px;
+        height: 154.816px;
+        right: 267px;
+        top: -100px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .preliminary-cost-block-for-info-adaptiv {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+        z-index: 0;
+    }
+
+    .preliminary-cost-block-for-info {
+        display: none;
+    }
+
+    .small-photo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .preliminary-cost-block {
+        align-items: center;
+    }
+
+    .middle-photo-left {
+        width: 162.854px;
+        height: 108.915px;
+        right: 13px;
+        top: 44px;
+    }
+
+    .middle-photo-right {
+        width: 130.368px;
+        height: 86.723px;
+        right: 0px;
+        top: 82px;
+    }
+
+    .preliminary-cost-block-for-info-adaptiv {
+        width: 295px;
+        height: 420px;
+        right: 0px;
+        top: 0px;
+    }
+
+    .preliminary-cost-block-for-info-adaptiv div {
+        width: 265.302px;
+    }
+
+    .big-photo {
+        width: 304.679px;
+        height: 205.424px;
+        right: 15px;
+    }
+
+    .block-for-info-title {
+        font-size: 20px;
+    }
+
+    .block-for-info-button-adaptiv {
+        width: 268px;
+        height: 33px;
+    }
+}
