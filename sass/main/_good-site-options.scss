@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 31px;
 }
 
 .good-site-options-blocks {
@@ -41,22 +42,32 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 56px;
-    row-gap: 56px;
 }
 
 .usefulness-block-one {
     width: 360px;
     display: grid;
-    gap: 30px;
     align-items: center;
 }
 
+.usefulness-block-one-svg {
+    height: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// .usefulness-block-one-svg img {
+//     align-self: center;
+// }
+
 .usefulnes-first {
-    @include good-site-options-text(35px, 600, 88.567%)
+    @include good-site-options-text(35px, 600, 50px)
 }
 
 .block-usefulnes-description {
     grid-column: 1/3;
+    height: 130px;
 }
 
 .usefulnes-description {
@@ -66,7 +77,7 @@
 .good-site-options-block-two {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 20px;
 }
 
 .block-two-title {
@@ -77,12 +88,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     gap: 31px;
 }
 
 .block-two-number-size {
-    width: 81px;
+    max-width: 81px;
+    width: 100%;
 }
 
 .block-two-number {
@@ -91,7 +103,9 @@
 }
 
 .block-two-name-size {
-    width: 296px;
+    max-width: 296px;
+    min-width: 296px;
+    width: 100%;
 }
 
 .block-two-name {
@@ -100,12 +114,20 @@
 }
 
 .block-two-text-size {
-    width: 592px;
+    max-width: 592px;
+    width: 100%;
 }
 
 .block-two-text {
     @include good-site-options-text(18px, 400, 158.567%);
     color: #FFF8F8;
+}
+
+.good-site-options-block-three {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
 }
 
 .options-block-three-btn {
@@ -122,4 +144,105 @@
 
 .options-block-three-btn:hover {
     background-color: rgb(252, 118, 118);
+}
+
+@media screen and (max-width: 1254px) {
+    .good-site-options {
+        padding-top: 87px;
+        padding-bottom: 87px;
+    }    
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 838px) {
+    .good-site-options {
+        padding: 87px 31px;
+
+    }
+
+    .usefulness-blocks {
+        column-gap: 34px;
+        // row-gap: 45px;
+    }
+
+    .usefulness-block-one {
+        width: 302px;
+    }
+
+    .adaptiv-photo {
+        width: 72.043px;
+        height: 72.043px;
+    }
+
+    .adaptiv-photo-2 {
+        width: 83px;
+        height: 102px;
+    }
+
+    .adaptiv-photo-3 {
+        width: 89.884px;
+        height: 103.953px;
+    }
+
+    .usefulnes-first {
+        font-size: 30px;
+    }
+
+    .usefulnes-description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .title-block-one span {
+        font-size: 33px;
+    }
+
+    .block-two-title {
+        font-size: 33px;
+    }
+
+    .block-two-li {
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 12px;
+    } 
+    
+    .options-block-three-btn {
+        width: 267px;
+        height: 82px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .usefulness-block-one {
+        width: 273px;
+    }
+
+    .adaptiv-photo {
+        width: 72.043px;
+        height: 72.043px;
+    }
+
+    .adaptiv-photo-2 {
+        width: 83px;
+        height: 102px;
+    }
+
+    .adaptiv-photo-3 {
+        width: 89.884px;
+        height: 103.953px;
+    }
+
+    .usefulnes-first {
+        font-size: 28px;
+    }
+
+    .usefulnes-description {
+        font-size: 14px;
+    }
 }
