@@ -1,0 +1,122 @@
+@import "../fonts";
+
+.portfolio {
+    max-height: 1208px;
+    height: 100%;
+    background-color: #010101;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.portfolio-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 58px;
+}
+
+.portfolio-block-title {
+    color: #FFF;
+
+/* Заголовок 2 */
+    font-family: $Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 88.567%; /* 44.283px */
+}
+
+.portfolio-block-photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.portfolio-block-photo div:hover {
+    transform: scale(1.1); 
+}
+
+.portfolio-images {
+    width: 100%;
+}
+
+.portfolio-button {
+    width: 281px;
+    height: 38px;
+    border: 1px solid #FFF;
+    background: none;
+
+    color: #FFF;
+    font-family: $Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+
+}
+
+.portfolio-button:hover {
+    animation-name: background;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes background {
+    from {
+        background: none;
+        transform: rotate(0deg);
+    } 
+    
+    25% {
+        background: rgb(180, 35, 216);
+        transform: rotate(11.25deg) scale(1.2);
+    }
+
+    50% {
+        background: rgb(14, 43, 208);
+        transform: rotate(0deg);
+    }
+
+    75% {
+        background: rgb(55, 228, 217);
+        transform: rotate(-11.25deg) scale(1.2);
+    }
+
+    to {
+        background: red;
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 1615px) {
+    .portfolio-block-photo div {
+        width: 340px;
+        height: 220px;     
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .portfolio-block-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 13px;
+        padding-left: 13px;
+    }
+
+
+}
+
+@media screen and (max-width: 731px) {
+    .portfolio-block-for-title {
+        width: 260px;
+    }
+
+    .portfolio-block-title {
+        font-size: 40px;
+    }
+}
