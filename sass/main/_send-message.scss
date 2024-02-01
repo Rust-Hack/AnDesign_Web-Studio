@@ -82,7 +82,7 @@ textarea {
 @media screen and (max-width: 1140px) {
     .send-message-block {
         gap: 43px;
-
+        align-items: start;
     }
 
     .send-message-title-block {
@@ -94,10 +94,6 @@ textarea {
         width: auto;
         padding-left: 34px;
         padding-right: 34px;
-    }
-
-    .send-message-block {
-        align-items: center;
     }
 
     form {
@@ -115,8 +111,6 @@ textarea {
 
     form {
         flex-direction: column;
-        padding-left: 13px;
-        padding-right: 13px;
     }
 }
 
@@ -151,5 +145,9 @@ textarea {
     .send-message-button {
         width: 286px;
         height: 56px;
+    }
+
+    .send-message-block {
+        align-items: center;
     }
 }
