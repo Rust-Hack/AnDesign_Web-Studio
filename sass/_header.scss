@@ -135,7 +135,7 @@ nav {
         display: none;
     }
 
-    .line:hover .links {
+    .line .links {
         display: block;
         display: flex;
         flex-direction: column;
@@ -144,7 +144,7 @@ nav {
         gap: 37px;
     }
 
-    .line:hover .cross {
+    .line .cross {
         display: block;
         position: absolute;
         top: 27px;

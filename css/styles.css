@@ -147,7 +147,7 @@ nav {
   .cross {
     display: none;
   }
-  .line:hover .links {
+  .line .links {
     display: block;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -164,7 +164,7 @@ nav {
             align-items: center;
     gap: 37px;
   }
-  .line:hover .cross {
+  .line .cross {
     display: block;
     position: absolute;
     top: 27px;
