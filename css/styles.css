@@ -147,7 +147,7 @@ nav {
   .cross {
     display: none;
   }
-  .line .links {
+  .links.active {
     display: block;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -164,7 +164,7 @@ nav {
             align-items: center;
     gap: 37px;
   }
-  .line .cross {
+  .cross.active {
     display: block;
     position: absolute;
     top: 27px;
