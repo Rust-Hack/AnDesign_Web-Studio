@@ -1858,6 +1858,24 @@ ul {
   gap: 40px;
 }
 
+.form-page-number-adaptiv {
+  padding: 0px 10px;
+}
+
+.form-page-number-adaptiv div {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.second {
+  height: 705px;
+}
+
+.third {
+  height: 670px;
+}
+
 .form-page-number {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1876,7 +1894,28 @@ ul {
   left: 18px;
 }
 
-.form-page-number img {
+.page-number-2 {
+  color: rgb(0, 0, 0);
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 13.55px;
+  font-weight: 400;
+}
+
+.page-number-3 {
+  color: rgb(0, 0, 0);
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 13.55px;
+  font-weight: 400;
+  position: relative;
+  right: 18px;
+}
+
+.arrow-left {
+  position: relative;
+  right: 398px;
+}
+
+.arrow-right {
   position: relative;
   left: 398px;
 }
@@ -1907,7 +1946,28 @@ ul {
   gap: 15px;
 }
 
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 402.27px);
+  grid-template-rows: repeat(4, 67.75px);
+  gap: 15px;
+}
+
 .form-grid div {
+  -webkit-box-shadow: 1.69px 3.39px 16.94px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 1.69px 3.39px 16.94px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(254, 254, 254);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 0px 19.5px;
+}
+
+.form-grid-2 div {
   -webkit-box-shadow: 1.69px 3.39px 16.94px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 1.69px 3.39px 16.94px 0px rgba(0, 0, 0, 0.1);
   background: rgb(254, 254, 254);
@@ -1925,18 +1985,32 @@ ul {
   width: 300px;
 }
 
+.form-grid-2 div label {
+  width: 300px;
+}
+
 .form-grid-checkbox {
   background-color: rgb(0, 0, 0);
   height: 29px;
   width: 29px;
 }
 
-input[type=submit] {
+.submit-button {
   width: 162.55px;
   height: 49.18px;
   background-color: red;
   color: white;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
 }
 
 .form-grid-submit {
@@ -1959,11 +2033,17 @@ input[type=submit] {
     height: 499px;
     gap: 30px;
   }
-  .page-number {
-    font-size: 10px;
+  .second {
+    height: 676px;
   }
-  .form-page-number img {
-    left: 300px;
+  .third {
+    height: 500px;
+  }
+  .arrow-left {
+    right: 290px;
+  }
+  .arrow-right {
+    left: 290px;
   }
   .form-with-checkbox-and-quetion {
     gap: 34px;
@@ -1972,10 +2052,24 @@ input[type=submit] {
     grid-template-columns: repeat(2, 330px);
     grid-template-rows: repeat(3, 70px);
   }
+  .form-grid-2 {
+    grid-template-columns: repeat(2, 330px);
+    grid-template-rows: repeat(4, 70px);
+  }
+  .form-grid-third {
+    grid-template-rows: repeat(2, 70px);
+  }
   .form-grid div label {
     font-size: 14px;
   }
+  .form-grid-2 div label {
+    font-size: 14px;
+  }
   input[type=submit] {
+    width: 127.29px;
+    height: 38.22px;
+  }
+  .submit-button {
     width: 127.29px;
     height: 38.22px;
   }
@@ -1987,14 +2081,30 @@ input[type=submit] {
   .calculation-form-block-quetion {
     width: 620px;
   }
-  .form-page-number img {
-    left: 270px;
+  .third {
+    height: 550px;
+  }
+  .arrow-left {
+    right: 250px;
+  }
+  .arrow-right {
+    left: 250px;
   }
   .form-grid {
     grid-template-columns: repeat(2, 295px);
     grid-template-rows: repeat(3, 74px);
   }
+  .form-grid-2 {
+    grid-template-columns: repeat(2, 295px);
+    grid-template-rows: repeat(4, 74px);
+  }
+  .form-grid-third {
+    grid-template-rows: repeat(2, 74px);
+  }
   .form-grid div {
+    padding: 0px 0px 0px 11.59px;
+  }
+  .form-grid-2 div {
     padding: 0px 0px 0px 11.59px;
   }
 }
@@ -2014,8 +2124,21 @@ input[type=submit] {
     height: 824px;
     gap: 17px;
   }
+  .second {
+    height: 1045px;
+  }
+  .third {
+    height: 724px;
+  }
   .form-page-number-adaptiv {
     width: 275px;
+  }
+  .form-page-number-adaptiv div {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .page-number-3 {
+    right: 0;
   }
   .calculation-form-block-quetion-title {
     font-size: 25px;
@@ -2030,8 +2153,91 @@ input[type=submit] {
     grid-template-columns: 275px;
     grid-template-rows: repeat(6, 74px);
   }
+  .form-grid-2 {
+    grid-template-columns: 275px;
+    grid-template-rows: repeat(8, 74px);
+  }
+  .form-grid-third {
+    grid-template-rows: repeat(4, 74px);
+  }
   .form-grid div {
     padding: 0px 0px 0px 11.59px;
+  }
+  .form-grid-2 div {
+    padding: 0px 0px 0px 11.59px;
+  }
+}
+.form-telefon-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.form-telefon-number-input input[type=tel] {
+  width: 375px;
+  height: 40px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 147.19%;
+}
+
+.submit-button-tel {
+  color: #fff;
+  background-color: red;
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 49.18px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hover-button-submit {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1000px) {
+  .form-page-number-adaptiv-title {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .telefon-number-gap {
+    gap: 50px;
+    height: 540px;
+  }
+  .form-page-number-adaptiv-title {
+    font-size: 16px;
+  }
+  .form-telefon-number-input input[type=tel] {
+    width: 200px;
+  }
+  .form-telefon-number {
+    gap: 100px;
   }
 }
 footer {

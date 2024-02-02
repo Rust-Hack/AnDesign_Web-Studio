@@ -1,0 +1,66 @@
+.form-telefon-number {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-telefon-number-input input[type=tel] {
+    width: 375px;
+    height: 40px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    outline: none;
+
+    color: rgb(0, 0, 0);
+    font-family: $Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 147.19%;
+}
+
+.submit-button-tel{
+    color: #fff;
+    background-color: red;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 49.18px;
+    text-decoration: none;
+    display: flex;
+}
+
+.hover-button-submit {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width: 1000px) {
+    .form-page-number-adaptiv-title {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+
+    .telefon-number-gap {
+        gap: 50px;
+        height: 540px;
+    }
+
+    .form-page-number-adaptiv-title {
+        font-size: 16px;
+    }
+
+    .form-telefon-number-input input[type=tel] {
+        width: 200px;
+    }
+
+    .form-telefon-number {
+        gap: 100px;
+    }
+}
