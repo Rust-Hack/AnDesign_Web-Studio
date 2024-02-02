@@ -41,6 +41,11 @@ nav {
 
 .nav {
     @extend %header;
+    height: 20px;
+}
+
+.header-nav {
+    height: 20px;
 }
 
 .nav:hover {

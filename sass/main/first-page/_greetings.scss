@@ -47,6 +47,7 @@
     @include greetings-text(16px, 500, normal);
     letter-spacing: 0.8px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1180px) {

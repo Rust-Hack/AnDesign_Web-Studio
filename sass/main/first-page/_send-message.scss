@@ -40,13 +40,13 @@
     line-height: 33.94px;
 }
 
-form {
+.send-message-form {
     display: flex;
     gap: 170px;
     // flex-wrap: wrap;
 }
 
-form div {
+.send-message-form div {
     display: flex;
     flex-direction: column;
     gap: 58px;
@@ -96,7 +96,7 @@ textarea {
         padding-right: 34px;
     }
 
-    form {
+    .send-message-form {
         gap: 64px;
         justify-content: center;
         padding-left: 34px;
@@ -109,7 +109,7 @@ textarea {
         display: none;
     }
 
-    form {
+    .send-message-form {
         flex-direction: column;
     }
 }

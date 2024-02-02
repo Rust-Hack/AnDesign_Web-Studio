@@ -56,6 +56,14 @@ nav {
   gap: 37px;
 }
 
+.nav {
+  height: 20px;
+}
+
+.header-nav {
+  height: 20px;
+}
+
 .nav:hover {
   color: #F00;
   border-bottom: 1px #F00 dashed;
@@ -246,6 +254,7 @@ nav {
   line-height: normal; /* 53.16px */
   letter-spacing: 0.8px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1180px) {
@@ -350,6 +359,7 @@ nav {
   font-weight: 400;
   line-height: 190%;
   width: 287px;
+  height: 152px;
 }
 .about-site-block .about-site-block-info {
   color: #050505;
@@ -1412,14 +1422,14 @@ nav {
   line-height: 33.94px;
 }
 
-form {
+.send-message-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 170px;
 }
 
-form div {
+.send-message-form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1477,7 +1487,7 @@ textarea {
     padding-left: 34px;
     padding-right: 34px;
   }
-  form {
+  .send-message-form {
     gap: 64px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1490,7 +1500,7 @@ textarea {
   .name-disable-adaptiv {
     display: none;
   }
-  form {
+  .send-message-form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1777,6 +1787,253 @@ ul {
             flex-direction: column-reverse;
   }
 }
+.calculation-form * {
+  color: rgb(58, 58, 58);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 137.19%;
+}
+
+.calculation-form {
+  padding-top: 161px;
+  padding-bottom: 202px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculation-form-block {
+  width: 980px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 55px;
+}
+
+.calculation-form-block-title {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 27px;
+}
+
+.form-title {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 88.57%;
+}
+
+.calculation-form-block-quetion {
+  width: 980px;
+  height: 566px;
+  background: rgb(255, 248, 248);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.form-page-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-number {
+  color: rgb(0, 0, 0);
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 13.55px;
+  font-weight: 400;
+  position: relative;
+  left: 18px;
+}
+
+.form-page-number img {
+  position: relative;
+  left: 398px;
+}
+
+.calculation-form-block-quetion-title {
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 147.19%;
+}
+
+.form-with-checkbox-and-quetion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 58px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 402.27px);
+  grid-template-rows: repeat(3, 67.75px);
+  gap: 15px;
+}
+
+.form-grid div {
+  -webkit-box-shadow: 1.69px 3.39px 16.94px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 1.69px 3.39px 16.94px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(254, 254, 254);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 0px 19.5px;
+}
+
+.form-grid div label {
+  width: 300px;
+}
+
+.form-grid-checkbox {
+  background-color: rgb(0, 0, 0);
+  height: 29px;
+  width: 29px;
+}
+
+input[type=submit] {
+  width: 162.55px;
+  height: 49.18px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.form-grid-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .calculation-form-block {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .calculation-form-block-quetion {
+    width: 700px;
+    height: 499px;
+    gap: 30px;
+  }
+  .page-number {
+    font-size: 10px;
+  }
+  .form-page-number img {
+    left: 300px;
+  }
+  .form-with-checkbox-and-quetion {
+    gap: 34px;
+  }
+  .form-grid {
+    grid-template-columns: repeat(2, 330px);
+    grid-template-rows: repeat(3, 70px);
+  }
+  .form-grid div label {
+    font-size: 14px;
+  }
+  input[type=submit] {
+    width: 127.29px;
+    height: 38.22px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .calculation-form-block-title {
+    width: 620px;
+  }
+  .calculation-form-block-quetion {
+    width: 620px;
+  }
+  .form-page-number img {
+    left: 270px;
+  }
+  .form-grid {
+    grid-template-columns: repeat(2, 295px);
+    grid-template-rows: repeat(3, 74px);
+  }
+  .form-grid div {
+    padding: 0px 0px 0px 11.59px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .calculation-form {
+    padding-top: 130px;
+    padding-bottom: 63px;
+  }
+  .calculation-form-block {
+    gap: 38px;
+  }
+  .calculation-form-block-title {
+    width: 283px;
+  }
+  .calculation-form-block-quetion {
+    width: 295px;
+    height: 824px;
+    gap: 17px;
+  }
+  .form-page-number-adaptiv {
+    width: 275px;
+  }
+  .calculation-form-block-quetion-title {
+    font-size: 25px;
+  }
+  .form-page-number img {
+    display: none;
+  }
+  .page-number {
+    left: 0;
+  }
+  .form-grid {
+    grid-template-columns: 275px;
+    grid-template-rows: repeat(6, 74px);
+  }
+  .form-grid div {
+    padding: 0px 0px 0px 11.59px;
+  }
+}
 footer {
   background-color: black;
   min-height: 225px;
@@ -1848,6 +2105,10 @@ footer {
 .nav2:hover {
   color: #F00;
   border-bottom: 1px #F00 dashed;
+}
+
+.footer-nav {
+  height: 20px;
 }
 
 .social-media {

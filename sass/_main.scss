@@ -1,12 +1,13 @@
 @import "./fonts";
-@import "./main/greetings";
-@import "./main/about-site";
-@import "./main/good-site-options";
-@import "./main/preliminary-cost";
-@import "./main/portfolio";
-@import "./main/progress-of-work";
-@import "./main/send-message";
-@import "./main/additional";
+@import "./main/first-page/greetings";
+@import "./main/first-page/about-site";
+@import "./main/first-page/good-site-options";
+@import "./main/first-page/preliminary-cost";
+@import "./main/first-page/portfolio";
+@import "./main/first-page/progress-of-work";
+@import "./main/first-page/send-message";
+@import "./main/first-page/additional";
+@import "./main/second-page/styles.scss"
 // main {
 //     height: 1000px;
 // }
