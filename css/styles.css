@@ -1380,6 +1380,7 @@ nav {
   height: 170px;
   position: relative;
   top: -217px;
+  z-index: 0;
 }
 
 .arrow-slide {

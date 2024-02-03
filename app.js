@@ -33,3 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     slider.dispatchEvent(new Event('input'));
   });
 });
+
+function openNewPage(url) {
+  window.location.href = url;
+}
