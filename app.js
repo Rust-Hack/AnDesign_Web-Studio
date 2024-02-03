@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   slides.addEventListener('touchmove', function (e) {
-<<<<<<< HEAD
     if (isSwiping) {
       const deltaX = e.touches[0].clientX - startX;
       const newTranslateX = startTranslateX + deltaX;
@@ -39,26 +38,14 @@ document.addEventListener('DOMContentLoaded', function () {
       slides.style.transform = `translateX(${newTranslateX}px)`;
       e.preventDefault();
     }
-=======
-    if (!isSwiping) return;
-
-    const deltaX = e.touches[0].clientX - startX;
-    const newTranslateX = startTranslateX + deltaX;
-    slides.style.transition = 'none'; // Добавим эту строку для отключения анимации
-    slides.style.transform = `translateX(${newTranslateX}px)`;
-
-    e.preventDefault();
->>>>>>> cfe63ca5e1e8fac4be091f97834b54757321d139
+  
   });
-
   slides.addEventListener('touchend', function (e) {
     if (isSwiping) {
       const deltaX = e.changedTouches[0].clientX - startX;
       const threshold = 50; // Порог для определения свайпа
 
       slides.style.transition = 'transform 0.5s ease-in-out';
-
-<<<<<<< HEAD
       if (deltaX > threshold) {
         slider.value = Math.max(parseInt(slider.value, 10) - 1, 1);
       } else if (deltaX < -threshold) {
@@ -67,14 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       slider.dispatchEvent(new Event('input'));
       isSwiping = false;
-=======
-    slides.style.transition = ''; // Удаляем инлайн-стиль, чтобы включить анимацию
-
-    if (deltaX > threshold) {
-      slider.value = Math.max(parseInt(slider.value, 10) - 1, 1);
-    } else if (deltaX < -threshold) {
-      slider.value = Math.min(parseInt(slider.value, 10) + 1, 8);
->>>>>>> cfe63ca5e1e8fac4be091f97834b54757321d139
     }
   });
 });
