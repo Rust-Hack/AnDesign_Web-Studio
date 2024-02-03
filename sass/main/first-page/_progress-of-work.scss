@@ -109,6 +109,27 @@
     flex-wrap: nowrap;
 }
 
+.arrow-slide-block-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 170px;
+    position: relative;
+    top: -217px;
+}
+
+.arrow-slide {
+    display: flex;
+    align-items: center;
+    height: 170px;
+    position: relative;
+    cursor: pointer;
+    font-size: 60px;
+    font-family: $Montserrat;
+    color: #000;
+    z-index: 2;
+}
+
 .carousel-block-text {
     display: flex;
     align-items: center;

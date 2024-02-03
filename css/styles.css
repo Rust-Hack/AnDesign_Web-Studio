@@ -1367,6 +1367,37 @@ nav {
       flex-wrap: nowrap;
 }
 
+.arrow-slide-block-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 170px;
+  position: relative;
+  top: -217px;
+}
+
+.arrow-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 170px;
+  position: relative;
+  cursor: pointer;
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  z-index: 2;
+}
+
 .carousel-block-text {
   display: -webkit-box;
   display: -ms-flexbox;
