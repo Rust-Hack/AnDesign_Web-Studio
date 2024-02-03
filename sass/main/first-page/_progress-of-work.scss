@@ -94,6 +94,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    touch-action: pan-y;
 }
 
 .carousel {
@@ -124,6 +125,7 @@
 }
 
 .slider-container {
+    width: 100%;
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -142,7 +144,7 @@
 
 .slider {
     width: 100%;
-    height: 10px;
+    height: 5px;
     -webkit-appearance: none;
     appearance: none;
     background: linear-gradient(to right, red 0%, white 0%, white 100%, red 100%);
@@ -155,7 +157,7 @@
     -webkit-appearance: none;
     appearance: none;
     width: 35px;
-    height: 15px;
+    height: 10px;
     background: #ff0000;
     border: 2px solid rgb(0, 0, 0);
     cursor: pointer;
