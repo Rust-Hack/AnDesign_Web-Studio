@@ -18,42 +18,40 @@ document.addEventListener('DOMContentLoaded', function () {
   slider.addEventListener('input', function () {
     const value = this.value;
     const translateValue = -((value - 1) * 280); // 270 (image width) + 10 (margin-right)
-    slides.style.transition = 'transform 0.5s ease-in-out';
     slides.style.transform = `translateX(${translateValue}px)`;
     currentNumber.textContent = value.toString().padStart(2, '0');
     isSwiping = false;
   });
 
   slides.addEventListener('touchstart', function (e) {
-    if (isSwiping) return;
     startX = e.touches[0].clientX;
     startTranslateX = parseInt(getComputedStyle(slides).transform.split(',')[4]);
+    isSwiping = true;
   });
 
   slides.addEventListener('touchmove', function (e) {
-    if (isSwiping) {
-      const deltaX = e.touches[0].clientX - startX;
-      const newTranslateX = startTranslateX + deltaX;
-      slides.style.transition = 'none';
-      slides.style.transform = `translateX(${newTranslateX}px)`;
-      e.preventDefault();
-    }
-  
+    if (!isSwiping) return;
+
+    const deltaX = e.touches[0].clientX - startX;
+    const newTranslateX = startTranslateX + deltaX;
+    slides.style.transform = `translateX(${newTranslateX}px)`;
+
+    e.preventDefault();
   });
+
   slides.addEventListener('touchend', function (e) {
-    if (isSwiping) {
-      const deltaX = e.changedTouches[0].clientX - startX;
-      const threshold = 50; // Порог для определения свайпа
+    if (!isSwiping) return;
 
-      slides.style.transition = 'transform 0.5s ease-in-out';
-      if (deltaX > threshold) {
-        slider.value = Math.max(parseInt(slider.value, 10) - 1, 1);
-      } else if (deltaX < -threshold) {
-        slider.value = Math.min(parseInt(slider.value, 10) + 1, 8);
-      }
+    const deltaX = e.changedTouches[0].clientX - startX;
+    const threshold = 50; // Порог для определения свайпа
 
-      slider.dispatchEvent(new Event('input'));
-      isSwiping = false;
+    if (deltaX > threshold) {
+      slider.value = Math.max(parseInt(slider.value, 10) - 1, 1);
+    } else if (deltaX < -threshold) {
+      slider.value = Math.min(parseInt(slider.value, 10) + 1, 8);
     }
+
+    slider.dispatchEvent(new Event('input'));
+    isSwiping = false;
   });
 });
