@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const slider = document.getElementById('slider');
   const currentNumber = document.getElementById('currentNumber');
   let startX = 0;
-  let startTranslateX = 0;
+  let startScrollLeft = 0;
   let isSwiping = false;
 
   slider.addEventListener('input', function () {
@@ -24,34 +24,28 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   slides.addEventListener('touchstart', function (e) {
+    if (isSwiping) return;
     startX = e.touches[0].clientX;
-    startTranslateX = parseInt(getComputedStyle(slides).transform.split(',')[4]);
-    isSwiping = true;
+    startScrollLeft = slides.scrollLeft;
   });
 
   slides.addEventListener('touchmove', function (e) {
-    if (!isSwiping) return;
-
-    const deltaX = e.touches[0].clientX - startX;
-    const newTranslateX = startTranslateX + deltaX;
-    slides.style.transform = `translateX(${newTranslateX}px)`;
-
-    e.preventDefault();
+    if (isSwiping) {
+      const deltaX = startX - e.touches[0].clientX;
+      slides.scrollLeft = startScrollLeft + deltaX;
+      e.preventDefault();
+    }
   });
 
-  slides.addEventListener('touchend', function (e) {
-    if (!isSwiping) return;
-
-    const deltaX = e.changedTouches[0].clientX - startX;
-    const threshold = 50; // Порог для определения свайпа
-
-    if (deltaX > threshold) {
-      slider.value = Math.max(parseInt(slider.value, 10) - 1, 1);
-    } else if (deltaX < -threshold) {
-      slider.value = Math.min(parseInt(slider.value, 10) + 1, 8);
-    }
-
-    slider.dispatchEvent(new Event('input'));
+  slides.addEventListener('touchend', function () {
     isSwiping = false;
+  });
+
+  slides.addEventListener('scroll', function () {
+    if (!isSwiping) {
+      const currentIndex = Math.round(slides.scrollLeft / 280) + 1;
+      slider.value = currentIndex;
+      currentNumber.textContent = currentIndex.toString().padStart(2, '0');
+    }
   });
 });
