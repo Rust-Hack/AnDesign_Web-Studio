@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const deltaX = e.touches[0].clientX - startX;
     const newTranslateX = startTranslateX + deltaX;
+    slides.style.transition = 'none'; // Добавим эту строку для отключения анимации
     slides.style.transform = `translateX(${newTranslateX}px)`;
 
     e.preventDefault();
@@ -44,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const deltaX = e.changedTouches[0].clientX - startX;
     const threshold = 50; // Порог для определения свайпа
+
+    slides.style.transition = ''; // Удаляем инлайн-стиль, чтобы включить анимацию
 
     if (deltaX > threshold) {
       slider.value = Math.max(parseInt(slider.value, 10) - 1, 1);
