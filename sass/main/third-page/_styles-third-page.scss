@@ -1,0 +1,134 @@
+.more-details * {
+    color: rgb(100, 93, 93);
+    font-family: $Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 170%;
+}
+
+.more-details {
+    padding: 166px 37px 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.more-details-block {
+    max-width: 885px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 97px;
+}
+
+.more-details-block-with-text-and-photo {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.more-details-block-with-title-and-text {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.more-details-block-title {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+}
+
+.more-details-block-photo img {
+    width: 100%;
+}
+
+.more-details-block-with-order {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.more-details-order-title span {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 188.57%;
+}
+
+.more-details-order-input-submit {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.more-details-order-input-submit input[type="tel"],input[type="email"] {
+    border: none;
+    border-bottom: 1.21px solid rgb(0, 0, 0);
+    width: 275px;
+    outline: none;
+}
+
+.more-details-order-input-submit input[type="submit"] {
+    border: none;
+    background: rgb(255, 0, 0);
+    width: 189.04px;
+    height: 53.5px;
+
+    color: rgb(255, 255, 255);
+    font-size: 14.95px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 5%;
+}
+
+@media screen and (max-width: 950px) {
+
+    .more-details {
+        padding-top: 145px;
+        padding-bottom: 100px;
+    }
+
+    .more-details-block {
+        max-width: 760px;
+        width: 100%;
+    }
+
+    .more-details-block-with-title-and-text {
+        max-width: 583px;
+        width: 100%;
+    }
+
+    .more-details-block-photo {
+        max-width: 583px;
+        width: 100%;
+    }
+
+    .more-details-order-input-submit input[type="tel"],input[type="email"], input[type="submit"]{
+        width: 187px;
+    }
+}
+
+@media screen and (max-width: 706px) {
+
+    .more-details * {
+        font-size: 13px;
+    }
+
+    .more-details-block-title {
+        font-size: 25px;
+    }
+
+    .more-details-block-with-order {
+        text-align: center;
+    }
+
+    .more-details-order-title {
+        font-size: 18px;
+    }
+
+    .more-details-order-input-submit {
+        justify-content: center;
+    }
+}
