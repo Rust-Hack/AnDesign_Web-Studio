@@ -6,6 +6,10 @@ function toggleMenu() {
     cross.classList.toggle('active');
 }
 
+function openNewPage(url) {
+  window.location.href = url;
+}
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const slides = document.getElementById('slides');
@@ -34,6 +38,3 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-function openNewPage(url) {
-  window.location.href = url;
-}
