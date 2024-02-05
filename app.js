@@ -18,23 +18,26 @@ document.addEventListener('DOMContentLoaded', function () {
   const arrowLeft = document.getElementById('arrowLeft');
   const arrowRight = document.getElementById('arrowRight');
 
-  slider.addEventListener('input', function () {
-    const value = this.value;
-    const translateValue = -((value - 1) * 280); // 270 (image width) + 10 (margin-right)
-    slides.style.transform = `translateX(${translateValue}px)`;
-    currentNumber.textContent = value.toString().padStart(2, '0');
-  });
+  // Проверка наличия элементов перед добавлением слушателей
+  if (slider && arrowLeft && arrowRight) {
+    slider.addEventListener('input', function () {
+      const value = this.value;
+      const translateValue = -((value - 1) * 280);
+      slides.style.transform = `translateX(${translateValue}px)`;
+      currentNumber.textContent = value.toString().padStart(2, '0');
+    });
 
-  arrowLeft.addEventListener('click', function () {
-    const currentValue = parseInt(slider.value, 10);
-    slider.value = Math.max(currentValue - 1, 1);
-    slider.dispatchEvent(new Event('input'));
-  });
+    arrowLeft.addEventListener('click', function () {
+      const currentValue = parseInt(slider.value, 10);
+      slider.value = Math.max(currentValue - 1, 1);
+      slider.dispatchEvent(new Event('input'));
+    });
 
-  arrowRight.addEventListener('click', function () {
-    const currentValue = parseInt(slider.value, 10);
-    slider.value = Math.min(currentValue + 1, 8);
-    slider.dispatchEvent(new Event('input'));
-  });
+    arrowRight.addEventListener('click', function () {
+      const currentValue = parseInt(slider.value, 10);
+      slider.value = Math.min(currentValue + 1, 8);
+      slider.dispatchEvent(new Event('input'));
+    });
+  }
 });
 

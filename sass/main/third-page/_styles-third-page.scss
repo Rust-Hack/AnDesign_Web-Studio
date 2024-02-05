@@ -63,14 +63,14 @@
     gap: 35px;
 }
 
-.more-details-order-input-submit input[type="tel"],input[type="email"] {
+.more-details-entry-field {
     border: none;
     border-bottom: 1.21px solid rgb(0, 0, 0);
     width: 275px;
     outline: none;
 }
 
-.more-details-order-input-submit input[type="submit"] {
+.more-details-entry-field-submit{
     border: none;
     background: rgb(255, 0, 0);
     width: 189.04px;
@@ -105,7 +105,7 @@
         width: 100%;
     }
 
-    .more-details-order-input-submit input[type="tel"],input[type="email"], input[type="submit"]{
+    .more-details-entry-field{
         width: 187px;
     }
 }
