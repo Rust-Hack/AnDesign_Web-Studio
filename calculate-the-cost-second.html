@@ -56,47 +56,47 @@
                             </a>
                         </div>
                         <div>
-                            <span class="calculation-form-block-quetion-title">Какая информация должна быть на сайте?</span>
+                            <span class="calculation-form-block-quetion-title">Сколько страниц должно быть на сайте?</span>
                         </div>
                     </div>
-                    <form action="" class="form-with-checkbox-and-quetion">
+                    <form id="secondForm" class="form-with-checkbox-and-quetion">
                         <div class="form-grid-2">
                             <div>
-                                <input class="form-grid-checkbox" id="promotion" type="checkbox">
-                                <label for="promotion">Информация об услугах компании</label>
+                                <input class="form-grid-checkbox" id="promotion" type="radio" name="2" value="0">
+                                <label for="promotion">Одностраничный</label>
                             </div>
                             <div>
-                                <input class="form-grid-checkbox" id="interaction" type="checkbox">
-                                <label for="interaction">Карточки товара</label>
+                                <input class="form-grid-checkbox" id="interaction" type="radio" name="2" value="0">
+                                <label for="interaction">До пяти страниц</label>
                             </div>
                             <div>
-                                <input class="form-grid-checkbox" id="creation-image" type="checkbox">
-                                <label for="creation-image">Форма обратной связи</label>
+                                <input class="form-grid-checkbox" id="creation-image" type="radio" name="2" value="100">
+                                <label for="creation-image">До десяти страниц</label>
                             </div>
                             <div>
-                                <input class="form-grid-checkbox" id="direct-sales" type="checkbox">
-                                <label for="direct-sales">Информация о компании и контакты</label>
+                                <input class="form-grid-checkbox" id="direct-sales" type="radio" name="2" value="150">
+                                <label for="direct-sales">До пятнадцати страниц</label>
                             </div>
                             <div>
-                                <input class="form-grid-checkbox" id="advertising" type="checkbox">
-                                <label for="advertising">Наша команда</label>
+                                <input class="form-grid-checkbox" id="advertising" type="radio" name="2" value="200">
+                                <label for="advertising">До двадцати страниц</label>
                             </div>
                             <div>
-                                <input class="form-grid-checkbox" id="to-create-service" type="checkbox">
-                                <label for="to-create-service">Новости компании</label>
+                                <input class="form-grid-checkbox" id="to-create-service" type="radio" name="2" value="250">
+                                <label for="to-create-service">До двадцати пяти страниц</label>
                             </div>
                             <div>
-                                <input class="form-grid-checkbox" id="to-create-service" type="checkbox">
-                                <label for="to-create-service">Прайс-лист</label>
+                                <input class="form-grid-checkbox" id="thirdPages" type="radio" name="2" value="300">
+                                <label for="thirdPages">До тридцати страниц</label>
                             </div>
                             <div>
-                                <input class="form-grid-checkbox" id="to-create-service" type="checkbox">
-                                <label for="to-create-service">Другое</label>
+                                <input class="form-grid-checkbox" id="moreThirdPages" type="radio" name="2" value="350">
+                                <label for="moreThirdPages">Больше тридцати страниц</label>
                             </div>
                         </div>
                         <div class="form-grid-submit">
                             <!-- <input type="submit" value="Далее →"> -->
-                            <a class="submit-button" href="./calculate-the-cost-third.html">Далее →</a>
+                            <a class="submit-button" href="./calculate-the-cost-third.html" id="secondButton">Далее →</a>
                         </div>
                     </form>
                     
@@ -132,6 +132,6 @@
             <span>©2024 AnDesign  Создание сайтов для бизнеса </span>
         </div>
     </footer>
-    <script src="./app.js"></script>
+    <script src="./app2.js" type="module"></script>
 </body>
 </html>

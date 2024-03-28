@@ -55,39 +55,39 @@
                             </a>
                         </div>
                         <div>
-                            <span class="calculation-form-block-quetion-title">Зачем Вам нужен сайт?</span>
+                            <span class="calculation-form-block-quetion-title">Какой сайт вам нужен?</span>
                         </div>
                     </div>
-                    <form action="./calculate-the-cost-second.html" class="form-with-checkbox-and-quetion">
+                    <form id="firstForm" class="form-with-checkbox-and-quetion">
                         <div class="form-grid">
                             <div>
-                                <input class="form-grid-checkbox" id="promotion" type="checkbox">
-                                <label for="promotion">Продвижение какого-либо продукта или бренда</label>
+                                <input class="form-grid-checkbox" id="promotion" type="radio" name="1" value="400"> 
+                                <label for="promotion">Сайт-визитка</label>
                             </div>
                             <div>
-                                <input class="form-grid-checkbox" id="interaction" type="checkbox">
-                                <label for="interaction">Взаимодействие с людьми (посетители, клиенты, партнеры)</label>
+                                <input class="form-grid-checkbox" id="interaction" type="radio" name="1" value="1200">
+                                <label for="interaction">Многостраничный</label>
                             </div>
                             <div>
-                                <input class="form-grid-checkbox" id="creation-image" type="checkbox">
-                                <label for="creation-image">Создание благоприятного имиджа компании</label>
+                                <input class="form-grid-checkbox" id="creation-image" type="radio" name="1" value="600">
+                                <label for="creation-image">Лендинг</label>
                             </div>
                             <div>
-                                <input class="form-grid-checkbox" id="direct-sales" type="checkbox">
-                                <label for="direct-sales">Прямые продажи в сети</label>
+                                <input class="form-grid-checkbox" id="direct-sales" type="radio" name="1" value="1500">
+                                <label for="direct-sales">Корпоративный</label>
                             </div>
                             <div>
-                                <input class="form-grid-checkbox" id="advertising" type="checkbox">
-                                <label for="advertising">Реклама товара или услуги</label>
+                                <input class="form-grid-checkbox" id="advertising" type="radio" name="1" value="1800">
+                                <label for="advertising">Интернет-магазин</label>
                             </div>
                             <div>
-                                <input class="form-grid-checkbox" id="to-create-service" type="checkbox">
-                                <label for="to-create-service">Создание какого-либо сервиса в сети</label>
+                                <input class="form-grid-checkbox" id="to-create-service" type="radio" name="1" value="800">
+                                <label for="to-create-service">Персональный проект</label>
                             </div>
                         </div>
                         <div class="form-grid-submit">
                             <!-- <input type="submit" value="Далее →"> -->
-                            <a class="submit-button" href="./calculate-the-cost-second.html">Далее →</a>
+                            <a class="submit-button" href="./calculate-the-cost-second.html" id="firstButton">Далее →</a>
                         </div>
                     </form>
                     
@@ -123,6 +123,6 @@
             <span>©2024 AnDesign  Создание сайтов для бизнеса </span>
         </div>
     </footer>
-    <script src="./app.js"></script>
+    <script src="./app1.js"></script>
 </body>
 </html>

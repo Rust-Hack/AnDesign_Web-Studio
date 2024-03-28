@@ -109,7 +109,7 @@
 .calculation-form-block-quetion-title {
     color: rgb(0, 0, 0);
     font-family: $Montserrat;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 147.19%;
 }
@@ -190,6 +190,20 @@
 .form-grid-submit {
     display: flex;
     justify-content: center;
+}
+
+.calcul-price-for-project {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price {
+    color: red;
+    font-weight: 700;
+    line-height: 147.19%;
+    font-family: $Montserrat;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -376,5 +390,9 @@
 
     .form-grid-2 div {
         padding: 0px 0px 0px 11.59px;
+    }
+
+    .price {
+        font-size: 16px;
     }
 }

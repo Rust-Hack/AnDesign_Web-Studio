@@ -1,6 +1,7 @@
 .form-telefon-number {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
 }
 
@@ -25,23 +26,19 @@
     border: none;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 220px;
     height: 49.18px;
     text-decoration: none;
     display: flex;
 }
 
 .hover-button-submit {
-    display: none;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    width: 400px;
 }
 
 @media screen and (max-width: 1000px) {
     .form-page-number-adaptiv-title {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
@@ -61,6 +58,10 @@
     }
 
     .form-telefon-number {
-        gap: 100px;
+        gap: 30px;
+    }
+
+    .hover-button-submit {
+        width: 200px;
     }
 }

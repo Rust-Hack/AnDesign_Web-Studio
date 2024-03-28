@@ -2062,7 +2062,7 @@ ul {
 .calculation-form-block-quetion-title {
   color: rgb(0, 0, 0);
   font-family: "Montserrat", sans-serif;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 147.19%;
 }
@@ -2159,6 +2159,25 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.calcul-price-for-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.price {
+  color: red;
+  font-weight: 700;
+  line-height: 147.19%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -2301,6 +2320,9 @@ ul {
   .form-grid-2 div {
     padding: 0px 0px 0px 11.59px;
   }
+  .price {
+    font-size: 16px;
+  }
 }
 .form-telefon-number {
   display: -webkit-box;
@@ -2310,6 +2332,9 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 40px;
 }
 
@@ -2337,7 +2362,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 200px;
+  width: 220px;
   height: 49.18px;
   text-decoration: none;
   display: -webkit-box;
@@ -2346,18 +2371,12 @@ ul {
 }
 
 .hover-button-submit {
-  display: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  width: 400px;
 }
 
 @media screen and (max-width: 1000px) {
   .form-page-number-adaptiv-title {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 630px) {
@@ -2372,7 +2391,10 @@ ul {
     width: 200px;
   }
   .form-telefon-number {
-    gap: 100px;
+    gap: 30px;
+  }
+  .hover-button-submit {
+    width: 200px;
   }
 }
 .more-details * {

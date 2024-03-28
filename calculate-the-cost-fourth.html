@@ -46,25 +46,26 @@
                 </div>
                 <div class="calculation-form-block-quetion telefon-number-gap">
                     <div class="form-page-number-adaptiv">
-                        <div>
-                            <span class="calculation-form-block-quetion-title form-page-number-adaptiv-title"> Впишите свой телефон, на который можно отправить информацию по whatsapp/viber/смс и нажмите на красную кнопку</span>
+                        <div class="calcul-price-for-project">
+                            <span class="calculation-form-block-quetion-title form-page-number-adaptiv-title">Примерная цена за будущий проект будет составлять: <span id="calcul" class="price"></span></span>
+                            <span class="calculation-form-block-quetion-title form-page-number-adaptiv-title">Для получения подробной консультации, оставьте свой номер телефона и мы свяжемся с вами.</span>
                         </div>
                     </div>
-                    <form action="./index-2-1.html" class="form-telefon-number">
+                    <form class="form-telefon-number" id="myForm" onsubmit="event.preventDefault(); sendEmail();">
                         <div class="form-telefon-number-input">
-                            <input type="tel" placeholder="+375(29)999-99-99" value="+375">
+                            <input type="tel" id="telephoneInput" placeholder="+375(29)999-99-99" value="+375">
                         </div>
                         <div class="form-grid-submit">
-                            <!-- <input type="submit" value="получить расчет"> -->
-                            <a href="./calculate-the-cost-fourth.html" class="submit-button-tel">получить расчет</a>
+                            <button type="button" class="submit-button-tel" id="fourthButton" onclick="sendEmail()">получить консультацию</button>
+                        </div>
+                        <div class="hover-button-submit">
+                            <span id="hoverClickButton"></span>
                         </div>
                     </form>
                     
                 </div>
             </div>
-            <div class="hover-button-submit">
-                <span>Спасибо, данные успешно отправлены, наш менеджер свяжется с Вами в течении 30 минут</span>
-            </div>
+
         </div>
     </main>
     <footer>
@@ -95,6 +96,7 @@
             <span>©2024 AnDesign  Создание сайтов для бизнеса </span>
         </div>
     </footer>
-    <script src="./app.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./app4.js"></script>
 </body>
 </html>
