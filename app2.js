@@ -6,4 +6,3 @@ secondButton.addEventListener('click', () => {
     localStorage.setItem('second', JSON.stringify(secondSelected.value));
 })
 
-console.log(JSON.parse(localStorage.getItem('first')));
