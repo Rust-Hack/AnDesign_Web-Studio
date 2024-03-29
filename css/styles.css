@@ -1561,6 +1561,13 @@ nav {
   line-height: 33.94px;
 }
 
+.send-message-text-two {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 33.94px;
+}
+
 .send-message-form {
   display: -webkit-box;
   display: -ms-flexbox;

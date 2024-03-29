@@ -407,16 +407,18 @@
                 <div>
                     <form class="send-message-form">
                         <div class="send-message-form-block">
-                            <input class="information name-disable-adaptiv" type="text" placeholder="Имя">
-                            <input class="information" type="tel" placeholder="Телефон*">
-                            <input class="information" type="email" placeholder="E-mail">
+                            <input class="information name-disable-adaptiv" type="text" placeholder="Имя" id="sendMessageName">
+                            <input class="information" type="tel" placeholder="Телефон*" id="sendMessageTel" value="+375">
+                            <input class="information" type="email" placeholder="E-mail" id="sendMessageEmail">
                         </div>
                         <div class="send-message-form-block">
                             <textarea cols="30" rows="10" placeholder="Опишите кратко, что Вам нужно"></textarea>
                             <input class="send-message-button" type="submit" value="отправить сообщение">
+                            <h3 class="send-message-text-two" id="sendMessageText"></h3>
                         </div>
                     </form>
                 </div>
+
             </div>
         </div>
         <div class="additional">
@@ -508,5 +510,7 @@
         </div>
     </footer>
     <script src="./app.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./app10.js"></script>
 </body>
 </html>
